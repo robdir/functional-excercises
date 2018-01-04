@@ -1,5 +1,4 @@
-// Implement a function which takes a function as 1st arg,
-// a number as the second, then executes the func by num times
+// basic example of functional programming; a function which calls another function on every instance of its input. 
 
 function repeat (operation, num) {
     for (var i = 0; i <= num; i++ ) {
@@ -8,3 +7,5 @@ function repeat (operation, num) {
 }
 
 module.exports = repeat
+
+// 
