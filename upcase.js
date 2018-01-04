@@ -4,3 +4,5 @@ function upcase(word) {
 }
 
 console.log(upcase('hello world'));
+
+module.exports = upcase
