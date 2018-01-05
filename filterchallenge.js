@@ -8,7 +8,7 @@ function getShortMessage(array) {
 
 module.exports = getShortMessage
 
-// their solution (eek)
+// their solution
 
 function getShortMsg(array) {
     return messages.filter(function(item) {
