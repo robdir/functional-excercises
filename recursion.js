@@ -17,11 +17,11 @@ console.log(toUpperArray(any));
 
 // this example is a basic reduce function using recursion instead
 
- function reduce(arr, function(prev, curr, index, arr) {
-    return prev + curr 
-}, 0)
+//  function reduce(arr, function(prev, curr, index, arr) {
+//     return prev + curr 
+// }, 0)
 
-//instead of 
+// with reduce
 
 var total = [1,2,3].reduce(
     (curr, prev) => curr + prev,
@@ -29,4 +29,6 @@ var total = [1,2,3].reduce(
 );
 
 console.log(total);
+
+
 

@@ -55,6 +55,7 @@ function total(route) {
     return res
 }
 
+
 function totalReduce(route) {
     const res = route.reduce( (x, y) => x + y )
     return res
