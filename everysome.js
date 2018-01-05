@@ -1,24 +1,27 @@
 function checkUsersValid(goodUsers) {
     return function allUsersValid(submittedUsers) {
-        return submittedUsers.every(function isBigEnough(el, i, arr) {
-            return goodUsers.some(function (el, i, arr) {
-                return element.id == el.id;
-            });
-        });
+        
     };
 }
 
 var goodUsers = [
     { id: 1 },
     { id: 2 },
-    { id: 3 }
-];
+    { id: 3 },
+    { id: 4 },
+    { id: 5 },
+]
 
-var testAllValid = checkUsersValid(goodUsers);
-
-testAllValid([
+var testValidPass = [
     { id: 2 },
-    { id: 1 }
-]);
+    { id: 3 },
+    { id: 4 },
+]
 
-console.log(checkUsersValid(goodUsers) === true);
+var testValidFail = [
+    { id: 5 },
+    { id: 6 },
+    { id: 7 },
+]
+
+module.exports  = checkUsersValid
