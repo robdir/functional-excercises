@@ -23,19 +23,10 @@ const messageArr = [
     {message: 'fermentum justo suscipit vestibulum. Donec sed finibus tortor, sed placerat sem.'}
 ];
 
-function getMessage(array) {
-var messages = array.map(function (e) {
-     return e.message;
-})
-    return messages
-};
-
 function getShortMessage(array) {
-    var messages = array.map(function (e) {
-        return e.message;
-    })
+    var messages = array.map( i => i.message )
     var shortMsg = messages.filter( msg => msg.length < 47 )
-        return shortMsg
+    return shortMsg
 };
 
-console.log(getShortMessage(messageArr));
+console.log(getShortMessage(messageArr)); 
